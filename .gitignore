@@ -4,6 +4,9 @@ node_modules/
 # 原始飞书数据（敏感信息，不入库）
 data/raw/
 
+# 处理后的明文JSON（敏感信息，不入库，仅加密后的.enc文件部署）
+data/processed/
+
 # Python
 __pycache__/
 *.pyc
