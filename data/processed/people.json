@@ -1,0 +1,504 @@
+{
+  "people": [
+    {
+      "name": "周学华",
+      "department": "810",
+      "role": "manager",
+      "related_projects": [
+        "guozhong"
+      ],
+      "reports": [
+        {
+          "week": "2026-W10",
+          "date": "2026-03-07",
+          "rule_name": "实验室周报",
+          "overview": "一、 本周整体概况核心主题：启元项目验收测试准备等、150IC采购推进，实验室年度任务分解规划。总体状态：多数项目按计划推进。启元项目进入验收最后阶段；雄安宣武医院项目进入多模块集成优化阶段；。主要风险：启元项目验收测试等准备，150IC采购验收，国重项目等存在不确定性。",
+          "next_plan": "确保交付：高质量完成启元项目验收材料准备工作，争取在18号前完成。启动采购：完成150W IC采购项目，启动供应商沟通。技术基座：推进实验室平台建设方案和VLA等各技术探索。",
+          "need_help": "流程支持：请加快150W IC采购项目的尽快确定采购，确保3月15日节点。资源协调：启元-红外项目，需要尽快完成专家评审，第三方测试等。技术加强：VLA，实验室平台等项目的需要加强投入，尽快确定建设方案。",
+          "type": "manager"
+        },
+        {
+          "week": "2026-W11",
+          "date": "2026-03-15",
+          "rule_name": "810-周报",
+          "overview": "一、 本周整体概况核心主题：启元项目验收测试等、150IC采购与到货验收，完成实验室年度任务分解和分工；试行飞书汇报和多维表格等管理工具。总体状态：多数项目按计划推进。启元项目进入验收最后阶段；150IC项目目前抓紧推进采购；雄安宣武医院项目进入多模块集成优化阶段。主要风险：启元项目验收评审等环节，150IC采购验收，国重项目等存在不确定性。",
+          "next_plan": "确保交付：高质量完成启元项目验收材料准备工作，争取在18号前完成。启动采购：完成150W IC采购项目和验收工作。技术基座：推进实验室平台建设方案和VLA等各技术探索。",
+          "need_help": "流程支持：请加快150W IC采购项目的尽快确定采购，确保3月15日节点。资源协调：启元-红外项目，需要尽快完成专家评审，第三方测试等。技术加强：VLA，实验室平台等项目的需要加强投入，尽快确定建设方案。",
+          "type": "manager"
+        }
+      ],
+      "report_count": 2
+    },
+    {
+      "name": "何林轩",
+      "department": "810",
+      "role": "staff",
+      "related_projects": [],
+      "reports": [
+        {
+          "week": "2026-W10",
+          "date": "2026-03-07",
+          "rule_name": "工作周报",
+          "overview": "",
+          "next_plan": "雄安机械臂项目（优先项）： 参与同武汉同事的技术交流，并着手恢复和测试机械臂的手眼标定系统，确保该核心功能可用。实验室整理（收敛任务）： 完成库房所有区域的整理、物资归位及标识工作，形成可直接使用的整洁环境。C4系统环境准备： 按照指导，开始进行C4无人船系统基础环境的部署与连通性测试。预计2周内完成。",
+          "need_help": "需补充手术器械实体样本用于数据采集。拟申请协助与医院方沟通，协调获取一批常用手术器械实物或明确的采购规格清单。",
+          "type": "manager"
+        },
+        {
+          "week": "2026-W11",
+          "date": "2026-03-13",
+          "rule_name": "810-周报",
+          "overview": "本周核心围绕雄安机械臂项目推进、实验环境建设、后勤保障及硬件部署开展工作。雄安机械臂项目完成环境恢复与技术演示，实验环境整理进度显著提升，租房对接与服务器迁移等配套工作顺利落地，为后续项目推进奠定了坚实基础。",
+          "next_plan": "1.继续推进 810 房间及库房的整理工作，完成剩余物资归类与定位标识；2.推进上位机软件部署工作，并针对软件性能进行优化；3.完成边缘程序开发，并开展程序优化工作。",
+          "need_help": "无",
+          "type": "manager"
+        }
+      ],
+      "report_count": 2
+    },
+    {
+      "name": "郭瑶",
+      "department": "810",
+      "role": "staff",
+      "related_projects": [],
+      "reports": [
+        {
+          "week": "2026-W10",
+          "date": "2026-03-08",
+          "rule_name": "实验室周报",
+          "overview": "招投标资质整理与价格计算武汉公司人员招聘产品采购价格项目款项催款与发票开具涿州项目劳务费资料补充与确认",
+          "next_plan": "1）价格计算方式信息汇总2）实验室运行明细，举例横纵项目各13）试卷装订整理完毕",
+          "need_help": "暂无",
+          "type": "manager"
+        },
+        {
+          "week": "2026-W11",
+          "date": "2026-03-14",
+          "rule_name": "810-周报",
+          "overview": "完成量子项目采购和货物发货",
+          "next_plan": "1）试卷整理2）学生酬金发放3）涿州项目催款呢4）项目开具发票",
+          "need_help": "/",
+          "type": "manager"
+        }
+      ],
+      "report_count": 2
+    },
+    {
+      "name": "任松",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [
+        "vla-embodied"
+      ],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-13",
+          "rule_name": "学生周报",
+          "current_tasks": "机械臂+VLA部署项目",
+          "this_week_work": "1、研究如何在越疆机械臂工作流程中引入VLA模型控制。2、初步编写了数据采集及转换代码。",
+          "next_plan": "1、完成对越疆机械臂数据的采集工作。2、编写流程控制代码，为后续系统整合做准备。",
+          "need_help": "暂无",
+          "related_projects": [
+            "vla-embodied"
+          ],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "古嘉豪",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [
+        "qiyuan-infrared"
+      ],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-14",
+          "rule_name": "学生周报",
+          "current_tasks": "1）课题 2）平台搭建",
+          "this_week_work": "1）服务器集群方案调研及说明书撰写2）课题模型部署方案调研及论文阅读",
+          "next_plan": "1）服务器集群搭建2）课题",
+          "need_help": "无",
+          "related_projects": [],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "宋洺睿",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [
+        "c4-usv"
+      ],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-13",
+          "rule_name": "学生周报",
+          "current_tasks": "撰写大论文；补充课题实验；测试c4项目",
+          "this_week_work": "撰写大论文第三章；补充第三章对比实验、消融实验；补充学姐小论文消融实验",
+          "next_plan": "c4项目跟进测试；补充大论文实验、撰写论文",
+          "need_help": "暂无",
+          "related_projects": [
+            "c4-usv"
+          ],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "张政玙",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [
+        "guozhong",
+        "power-inspection"
+      ],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-13",
+          "rule_name": "学生周报",
+          "current_tasks": "总部项目文档架空线路论文",
+          "this_week_work": "架空线路论文江苏省电力公司文档修改",
+          "next_plan": "架空线路论文",
+          "need_help": "无",
+          "related_projects": [
+            "power-inspection"
+          ],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "张超",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [
+        "vla-embodied"
+      ],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-13",
+          "rule_name": "学生周报",
+          "current_tasks": "了解智能助手接入大模型",
+          "this_week_work": "了解学习VLA模型；语音助手排除麦克风问题",
+          "next_plan": "根据电脑情况部署VLA，了解智能助手接入大模型如何实现",
+          "need_help": "部署VLA需要电脑，智能助手要解决matlab、mworks软件交互问题也需要电脑",
+          "related_projects": [
+            "vla-embodied"
+          ],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "李淑雅",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [
+        "xiongan-hospital"
+      ],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-13",
+          "rule_name": "学生周报",
+          "current_tasks": "雄医院项目图像识别相关的问题科研-小论文",
+          "this_week_work": "近期的核心工作是将扩散模型（Diffusion Model）引入到抓取位姿生成的框架中，目前的进展是打通了该模型的训练、可视化监控与评估的全链路工程代码。扩散模型训练后期 Loss 极低，但验证集 IoU 极差，由于到扩散模型对于epoch的要求，考虑抓取这个对时间有要求，现在考虑这个效果不是很理想，正在改进。深入跟进医院项目最新开发进程，全程观摩最新系统演示。对其中图像识别方面的问题，考虑“眼在手外 (Eye-to-Hand) + 眼在手上 (Eye-in-Hand)”的协同部署方案",
+          "next_plan": "论文：改进目前的研究算法，找一些新的思路项目：考虑“眼在手外 (Eye-to-Hand) + 眼在手上 (Eye-in-Hand)”的协同部署方案",
+          "need_help": "“眼在手外 (Eye-to-Hand) + 眼在手上 (Eye-in-Hand)”的协同部署方案需要在机械臂上在加一个摄像头。",
+          "related_projects": [
+            "xiongan-hospital"
+          ],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "梁景东",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [
+        "vla-embodied"
+      ],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-13",
+          "rule_name": "学生周报",
+          "current_tasks": "智研院项目的代码优化，具身空间和VLA模型的学习",
+          "this_week_work": "实现智研院项目代码中算法运行耗时的优化",
+          "next_plan": "部署并学习openvla，安装计算节点的系统Ubuntu22.04",
+          "need_help": "暂无",
+          "related_projects": [
+            "vla-embodied"
+          ],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "汪祥",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [
+        "c4-usv",
+        "smart-cabin"
+      ],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-13",
+          "rule_name": "学生周报",
+          "current_tasks": "1、大论文初稿；2、实船试验；3、小论文整理；",
+          "this_week_work": "1、完成大论文第三章核心实验内容以及第三章初稿；2、确定第四章实验方案；3、防水接头购买，待确定可使用规格后联系打孔人员完成打孔工作。",
+          "next_plan": "1、完成第四章实验及第四章初稿，第二章与第五章初稿；2、完成无人艇打孔工作与设备调试工作；",
+          "need_help": "1、待确定孔径后联系相关人员完成打孔。",
+          "related_projects": [
+            "c4-usv"
+          ],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "王宇恒",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [
+        "power-inspection",
+        "vla-embodied"
+      ],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-13",
+          "rule_name": "学生周报",
+          "current_tasks": "1）VLA在Mujuco平台下的仿真与训练2）输电线异物检测论文3）项目：电力物资检测远程督导具身智能机器人4）项目：基于具身空间的架空输电线路运检关键技术及装备研究",
+          "this_week_work": "1、调研VLA小模型以及OpenVLA目前的研究情况  目前VLA主流研究方向：（1）动作离散化 (Action-as-Token)   ： 将机器人的连续动作变成像文本一样的 Token，直接复用大语言          模 型（LLM）的架构，让模型像“接文本”一样“接动作”（2）空间与 3D 感知的融入（3D/Spatial VLA）：将点云（Point Cloud）、深度图（Depth）或 3D 占          据网格（3D Occupancy）与语言模型结合，提升模型在三维物理世界中的空间理解和操作精度。（3）高效微调与跨硬件部署（PEFT & Sim-to-Real）：利用 LoRA、QLoRA 等参数高效微调技术将模型快          速适配到实验室特定的硬件上是一个务实的痛点具代表性且开源的VLA小模型:OpenVLA(7B)   Octo (93M / 315M)  Qwen2-VL (2B / 7B 变体) + 动作 HeadACT (Action Chunking with Transformers) / Diffusion Policy",
+          "next_plan": "",
+          "need_help": "下周需要使用实验室服务器进行模型部署与仿真平台测试",
+          "related_projects": [
+            "power-inspection",
+            "vla-embodied"
+          ],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "王牵",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-15",
+          "rule_name": "学生周报",
+          "current_tasks": "大论文",
+          "this_week_work": "大论文第四章理论部分",
+          "next_plan": "大论文第四章实验部分",
+          "need_help": "无",
+          "related_projects": [],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "王腾岳",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [
+        "power-inspection",
+        "vla-embodied"
+      ],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-14",
+          "rule_name": "学生周报",
+          "current_tasks": "输电线目标检测论文       vla具身空间电缆隧道项目",
+          "this_week_work": "ai辅助嵌入式课程学习  环境避坑：WSL2 网络超时导致 Ollama 安装失败，AI 提供 Windows 原生部署 + WSL2 无缝对接方案，10 分钟解决卡了半天的问题代码学习：生成 STM32 寄存器级点灯代码，逐行注释时钟配置、GPIO 初始化原理，对比 HAL 库与寄存器开发的区别，边写边理解底层逻辑问题定位：开发中遇到的串口无数据、中断不响应等问题，粘贴代码 / 报错，AI 快速定位根因，给出修改方案和原理讲解",
+          "next_plan": "继续推进嵌入式开发/linux的学习",
+          "need_help": "暂无",
+          "related_projects": [
+            "power-inspection",
+            "vla-embodied"
+          ],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "田垒铭",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [
+        "vla-embodied",
+        "xiongan-hospital"
+      ],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-13",
+          "rule_name": "学生周报",
+          "current_tasks": "机械狗视觉部分机械臂",
+          "this_week_work": "论文PaLM-E  mini-vla训练",
+          "next_plan": "Mini-vla代码Vla相关论文机械狗视觉部分推进",
+          "need_help": "无",
+          "related_projects": [
+            "vla-embodied"
+          ],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "薛雨",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [
+        "c4-usv"
+      ],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-13",
+          "rule_name": "学生周报",
+          "current_tasks": "大论文课题无人船C4平台小论文修改",
+          "this_week_work": "1.课题：静态任务：融合FCM聚类与遗传算法（加入了小船的运动轨迹，距离矩阵优化，改进 GA 适应度函数（负载方差））2.小论文：根据老师意见修改一版。（加入了算法伪代码）",
+          "next_plan": "1.课题：动态任务：多维Cost的CBBA扩展算法（对比试验，原始CBBA）2.小论文：修改格式并投递。",
+          "need_help": "无人船C4平台不支持多船。",
+          "related_projects": [
+            "c4-usv"
+          ],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "谭文韬",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [
+        "vla-embodied"
+      ],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-13",
+          "rule_name": "学生周报",
+          "current_tasks": "针对VLA实现部署到实际的机械臂和",
+          "this_week_work": "1.完成在服务器上部署openvla，并进行推理任务。2.调研了部分开源的vla模型，后续进行不断更新。",
+          "next_plan": "1.在服务器上部署其他的开源VLA模型，比较不同VLA模型的性能，2. 尝试调用机械臂并将VLA模型部署到机械臂实现抓取。",
+          "need_help": "无",
+          "related_projects": [
+            "vla-embodied"
+          ],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "陈端端",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [
+        "xiongan-hospital"
+      ],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-14",
+          "rule_name": "学生周报",
+          "current_tasks": "1.雄安宣武医院项目2.修改论文",
+          "this_week_work": "1.雄安宣武医院项目2.修改论文",
+          "next_plan": "1.针对模型数据分布问题，再整一版数据，再训练一版模型",
+          "need_help": "无",
+          "related_projects": [
+            "xiongan-hospital"
+          ],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "马培权",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [
+        "c4-usv",
+        "smart-cabin"
+      ],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-15",
+          "rule_name": "学生周报",
+          "current_tasks": "课题开题方向智能机舱项目",
+          "this_week_work": "智能机舱项目：负责编写实验方案中“智能感知与状态检测”和“基于MWORKS的系统集成与验证”两部分内容。目前已完成所有内容的编写。课题：开题重新选择主题《基于视觉与激光雷达融合的无人船目标识别及路径规划研究》目前正查看相关文献并完成了文献综述报告。计划下周写完开题报告上交一版。重选开题原因：1、原开题PINN算法目前研究尚浅，实现难度较大。2、无人船目前并未使用摄像头，加上摄像头并使用视觉识别可提高无人船导航的可行性和安全性。3、由于水面环境易受光照、水波等影响，因此可在YOLO算法中加入注意力等机制提高识别准确性，也可作为算法的一个创新点。",
+          "next_plan": "智能机舱项目：继续跟进项目进度，完善项目指标内容。课题：完成开题报告。",
+          "need_help": "目前没有",
+          "related_projects": [
+            "smart-cabin",
+            "c4-usv"
+          ],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    },
+    {
+      "name": "高旋",
+      "department": "811A",
+      "role": "student",
+      "related_projects": [],
+      "reports": [
+        {
+          "week": "2026-W11",
+          "date": "2026-03-15",
+          "rule_name": "学生周报",
+          "current_tasks": "毕设大论文",
+          "this_week_work": "完成大论文第三章部分撰写",
+          "next_plan": "继续完善大论文第五章",
+          "need_help": "暂无",
+          "related_projects": [],
+          "type": "student"
+        }
+      ],
+      "report_count": 1
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-03-16T08:20:12.590264",
+    "total_reports": 23,
+    "total_projects": 8,
+    "total_people": 20,
+    "week_range": [
+      "2026-W10",
+      "2026-W11"
+    ]
+  }
+}

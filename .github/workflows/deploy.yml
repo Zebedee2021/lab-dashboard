@@ -1,0 +1,63 @@
+name: Deploy Dashboard
+
+on:
+  push:
+    branches: [main]
+    paths: ['docs/**', 'data/processed/**']
+  workflow_dispatch:
+    inputs:
+      fetch_data:
+        description: '是否从飞书拉取最新数据'
+        required: false
+        default: 'false'
+        type: choice
+        options: ['true', 'false']
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  fetch-and-process:
+    if: github.event.inputs.fetch_data == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r scripts/requirements.txt
+      - name: Fetch from Feishu
+        env:
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+        run: python scripts/feishu_api.py
+      - name: Process data
+        run: python scripts/process_data.py
+      - name: Encrypt data
+        env:
+          DASHBOARD_PASSWORD: ${{ secrets.DASHBOARD_PASSWORD }}
+        run: python scripts/encrypt_data.py
+      - name: Commit processed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/processed/ docs/data/
+          git diff --staged --quiet || git commit -m "Auto-update: fetch and process report data"
+          git push
+
+  deploy:
+    needs: [fetch-and-process]
+    if: always() && (needs.fetch-and-process.result == 'success' || needs.fetch-and-process.result == 'skipped')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          force_orphan: true

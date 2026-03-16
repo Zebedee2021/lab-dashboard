@@ -1,0 +1,78 @@
+# 项目配置：名称归一化 + 人员映射
+# 用于将周报中的不同项目称呼统一为标准项目名
+
+projects:
+  qiyuan-infrared:
+    name: "启元-红外项目"
+    aliases: ["启元", "红外项目", "启元红外", "启元-红外"]
+    deadline: "2026-03"
+    category: "科研项目"
+
+  xiongan-hospital:
+    name: "雄安宣武医院"
+    aliases: ["雄安", "宣武医院", "雄安机械臂", "雄医院", "机械臂项目", "医院项目"]
+    deadline: "2026-03"
+    category: "工程项目"
+
+  150w-ic:
+    name: "150W IC采购项目"
+    aliases: ["150IC", "150W", "量子项目", "IC采购"]
+    deadline: "2026-03-15"
+    category: "采购项目"
+
+  guozhong:
+    name: "国重项目(微电网故障诊断)"
+    aliases: ["国重", "微电网", "故障诊断", "国重项目"]
+    deadline: "2026-12"
+    category: "科研项目"
+
+  smart-cabin:
+    name: "智能机舱"
+    aliases: ["智能机舱", "机舱"]
+    deadline: "2027-12"
+    category: "科研项目"
+
+  vla-embodied:
+    name: "VLA/具身智能"
+    aliases: ["VLA", "具身智能", "具身空间", "openvla", "mini-vla", "机器人研究"]
+    deadline: ""
+    category: "研究方向"
+
+  c4-usv:
+    name: "C4无人船"
+    aliases: ["C4", "无人船", "无人艇", "C4平台"]
+    deadline: ""
+    category: "平台项目"
+
+  power-inspection:
+    name: "电力物资检测"
+    aliases: ["电力物资", "具身智能机器人", "输电线", "架空线路"]
+    deadline: ""
+    category: "科研项目"
+
+# 人员角色配置
+roles:
+  managers: ["周学华", "周治国"]
+  staff: ["郭瑶", "何林轩"]
+  students:
+    - "陈端端"
+    - "李淑雅"
+    - "田垒铭"
+    - "王宇恒"
+    - "任松"
+    - "梁景东"
+    - "谭文韬"
+    - "张超"
+    - "张政玙"
+    - "薛雨"
+    - "宋洺睿"
+    - "古嘉豪"
+    - "王腾岳"
+    - "高旋"
+    - "王牵"
+    - "马培权"
+    - "汪祥"
+
+# 管理层周报的 rule_name
+manager_rules: ["实验室周报", "810-周报", "工作周报"]
+student_rules: ["学生周报"]

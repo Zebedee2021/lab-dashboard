@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>810 Lab - 风险追踪</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-14">
+      <span class="text-lg font-bold text-gray-900">810 Lab Dashboard</span>
+      <div class="flex items-center gap-4">
+        <nav class="hidden sm:flex items-center gap-1 text-sm">
+          <a href="dashboard.html" class="px-3 py-1.5 rounded-md text-gray-600 hover:bg-gray-100">项目看板</a>
+          <a href="person.html" class="px-3 py-1.5 rounded-md text-gray-600 hover:bg-gray-100">人员周报</a>
+          <a href="risks.html" class="px-3 py-1.5 rounded-md bg-blue-50 text-blue-700 font-medium">风险追踪</a>
+          <a href="feedback.html" class="px-3 py-1.5 rounded-md text-gray-600 hover:bg-gray-100">反馈记录</a>
+        </nav>
+        <button onclick="Auth.logout()" class="text-sm text-gray-400 hover:text-gray-600">退出</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <h1 class="text-xl font-bold text-gray-900 mb-1">风险追踪</h1>
+    <p class="text-sm text-gray-500 mb-6">从周报中自动提取的项目风险，按严重程度排序</p>
+
+    <div class="flex flex-wrap gap-3 mb-6">
+      <select id="severity-filter" class="px-3 py-2 border border-gray-300 rounded-lg text-sm bg-white">
+        <option value="all">全部等级</option>
+        <option value="high">高风险</option>
+        <option value="medium">中风险</option>
+      </select>
+      <select id="project-filter" class="px-3 py-2 border border-gray-300 rounded-lg text-sm bg-white">
+        <option value="all">全部项目</option>
+      </select>
+    </div>
+
+    <div id="risk-list" class="space-y-3">
+      <div class="flex items-center justify-center py-20">
+        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/auth.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script>
+    if (!Auth.requireAuth()) throw new Error('Not authenticated');
+
+    let risksData = null;
+    const sevColors = {
+      high: { bg: 'bg-red-50', border: 'border-red-200', badge: 'bg-red-100 text-red-700', icon: 'text-red-500' },
+      medium: { bg: 'bg-yellow-50', border: 'border-yellow-200', badge: 'bg-yellow-100 text-yellow-700', icon: 'text-yellow-500' },
+      low: { bg: 'bg-blue-50', border: 'border-blue-200', badge: 'bg-blue-100 text-blue-700', icon: 'text-blue-500' },
+    };
+    const sevLabels = { high: '高', medium: '中', low: '低' };
+
+    async function init() {
+      risksData = await DataLoader.load('risks');
+      if (!risksData) return;
+
+      // 填充项目筛选
+      const projects = [...new Set(risksData.risks.map(r => r.project_name))];
+      const sel = document.getElementById('project-filter');
+      projects.forEach(p => {
+        const opt = document.createElement('option');
+        opt.value = p; opt.textContent = p;
+        sel.appendChild(opt);
+      });
+
+      render();
+      document.getElementById('severity-filter').addEventListener('change', render);
+      document.getElementById('project-filter').addEventListener('change', render);
+    }
+
+    function render() {
+      const sev = document.getElementById('severity-filter').value;
+      const proj = document.getElementById('project-filter').value;
+      let risks = risksData.risks;
+      if (sev !== 'all') risks = risks.filter(r => r.severity === sev);
+      if (proj !== 'all') risks = risks.filter(r => r.project_name === proj);
+
+      if (risks.length === 0) {
+        document.getElementById('risk-list').innerHTML = '<p class="text-center text-gray-400 py-10">无匹配风险</p>';
+        return;
+      }
+
+      document.getElementById('risk-list').innerHTML = risks.map((r, idx) => {
+        const sc = sevColors[r.severity] || sevColors.medium;
+        const weekSpan = r.first_reported === r.last_reported
+          ? r.first_reported
+          : `${r.first_reported} ~ ${r.last_reported}`;
+
+        return `
+        <div class="${sc.bg} rounded-xl border ${sc.border} p-4">
+          <div class="flex items-start gap-3">
+            <div class="${sc.icon} mt-0.5">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-sm font-semibold text-gray-900">${r.project_name}</span>
+                <span class="px-1.5 py-0.5 rounded text-xs font-medium ${sc.badge}">${sevLabels[r.severity]}风险</span>
+                <span class="text-xs text-gray-400">${r.category}</span>
+              </div>
+              <p class="text-sm text-gray-700 mb-2">${r.description}</p>
+              <div class="flex items-center gap-4 text-xs text-gray-500">
+                <span>首次报告: ${r.first_reported}</span>
+                <span>最近报告: ${r.last_reported}</span>
+                <span>持续 ${r.history.length} 周</span>
+                <span class="px-1.5 py-0.5 rounded ${r.trend === 'persistent' ? 'bg-orange-100 text-orange-600' : 'bg-gray-100 text-gray-500'}">
+                  ${r.trend === 'persistent' ? '持续存在' : '单次'}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>`;
+      }).join('');
+    }
+
+    init();
+  </script>
+</body>
+</html>

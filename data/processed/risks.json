@@ -1,0 +1,334 @@
+{
+  "risks": [
+    {
+      "project_id": "xiongan-hospital",
+      "project_name": "雄安宣武医院",
+      "description": "技术风险：LLM模型效果不佳，是关键路径瓶颈",
+      "category": "技术风险",
+      "severity": "high",
+      "first_reported": "2026-W10",
+      "last_reported": "2026-W11",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W10",
+          "description": "技术风险：LLM模型效果不佳，是关键路径瓶颈"
+        },
+        {
+          "week": "2026-W11",
+          "description": "技术风险：LLM模型效果不佳，是关键路径瓶颈"
+        }
+      ],
+      "trend": "persistent"
+    },
+    {
+      "project_id": "xiongan-hospital",
+      "project_name": "雄安宣武医院",
+      "description": "集成风险：细微器械的差异导致目标检测精度不佳",
+      "category": "管理风险",
+      "severity": "high",
+      "first_reported": "2026-W10",
+      "last_reported": "2026-W11",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W10",
+          "description": "集成风险：细微器械的差异导致目标检测精度不佳"
+        },
+        {
+          "week": "2026-W11",
+          "description": "集成风险：细微器械的差异导致目标检测精度不佳"
+        }
+      ],
+      "trend": "persistent"
+    },
+    {
+      "project_id": "qiyuan-infrared",
+      "project_name": "启元-红外项目",
+      "description": "验收测试报告的测试和大纲评审等",
+      "category": "管理风险",
+      "severity": "medium",
+      "first_reported": "2026-W10",
+      "last_reported": "2026-W11",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W10",
+          "description": "验收测试报告的测试和大纲评审等"
+        },
+        {
+          "week": "2026-W11",
+          "description": "验收测试报告的测试和大纲评审等"
+        }
+      ],
+      "trend": "persistent"
+    },
+    {
+      "project_id": "150w-ic",
+      "project_name": "150W IC采购项目",
+      "description": "供应链风险：目前因为价格沟通中，可能没达到预期的价格",
+      "category": "管理风险",
+      "severity": "medium",
+      "first_reported": "2026-W10",
+      "last_reported": "2026-W10",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W10",
+          "description": "供应链风险：目前因为价格沟通中，可能没达到预期的价格"
+        }
+      ],
+      "trend": "unchanged"
+    },
+    {
+      "project_id": "guozhong",
+      "project_name": "国重项目(微电网故障诊断)",
+      "description": "技术风险：训练系统技术方案复杂，实现难度可能被低估",
+      "category": "技术风险",
+      "severity": "medium",
+      "first_reported": "2026-W10",
+      "last_reported": "2026-W11",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W10",
+          "description": "技术风险：训练系统技术方案复杂，实现难度可能被低估"
+        },
+        {
+          "week": "2026-W11",
+          "description": "技术风险：训练系统技术方案复杂，实现难度可能被低估"
+        }
+      ],
+      "trend": "persistent"
+    },
+    {
+      "project_id": "guozhong",
+      "project_name": "国重项目(微电网故障诊断)",
+      "description": "依赖风险：论文，软著，专利等不符合预期进度要求",
+      "category": "管理风险",
+      "severity": "medium",
+      "first_reported": "2026-W10",
+      "last_reported": "2026-W11",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W10",
+          "description": "依赖风险：论文，软著，专利等不符合预期进度要求"
+        },
+        {
+          "week": "2026-W11",
+          "description": "依赖风险：论文，软著，专利等不符合预期进度要求"
+        }
+      ],
+      "trend": "persistent"
+    },
+    {
+      "project_id": "smart-cabin",
+      "project_name": "智能机舱",
+      "description": "需求风险：对于智能机舱不了解，需要马培权尽快参与推进该事项",
+      "category": "管理风险",
+      "severity": "medium",
+      "first_reported": "2026-W10",
+      "last_reported": "2026-W11",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W10",
+          "description": "需求风险：对于智能机舱不了解，需要马培权尽快参与推进该事项"
+        },
+        {
+          "week": "2026-W11",
+          "description": "需求风险：对于智能机舱不了解，需要马培权尽快参与推进该事项"
+        }
+      ],
+      "trend": "persistent"
+    },
+    {
+      "project_id": "smart-cabin",
+      "project_name": "智能机舱",
+      "description": "技术风险：多传感器数据融合，LLM以及熵流法如何结合",
+      "category": "技术风险",
+      "severity": "medium",
+      "first_reported": "2026-W10",
+      "last_reported": "2026-W11",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W10",
+          "description": "技术风险：多传感器数据融合，LLM以及熵流法如何结合"
+        },
+        {
+          "week": "2026-W11",
+          "description": "技术风险：多传感器数据融合，LLM以及熵流法如何结合"
+        }
+      ],
+      "trend": "persistent"
+    },
+    {
+      "project_id": "smart-cabin",
+      "project_name": "智能机舱",
+      "description": "四、 论文、专利与成果产出论文投稿：",
+      "category": "管理风险",
+      "severity": "medium",
+      "first_reported": "2026-W10",
+      "last_reported": "2026-W11",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W10",
+          "description": "四、 论文、专利与成果产出论文投稿："
+        },
+        {
+          "week": "2026-W11",
+          "description": "四、 论文、专利与成果产出论文投稿："
+        }
+      ],
+      "trend": "persistent"
+    },
+    {
+      "project_id": "smart-cabin",
+      "project_name": "智能机舱",
+      "description": "李淑雅同学论文《一种用于机器人抓取位姿检测的改进型UNet网络》已投稿高电压技术增刊，处于外审阶段",
+      "category": "技术风险",
+      "severity": "medium",
+      "first_reported": "2026-W10",
+      "last_reported": "2026-W11",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W10",
+          "description": "李淑雅同学论文《一种用于机器人抓取位姿检测的改进型UNet网络》已投稿高电压技术增刊，处于外审阶段"
+        },
+        {
+          "week": "2026-W11",
+          "description": "李淑雅同学论文《一种用于机器人抓取位姿检测的改进型UNet网络》已投稿高电压技术增刊，已拟录用，待修改版本后返回"
+        }
+      ],
+      "trend": "persistent"
+    },
+    {
+      "project_id": "smart-cabin",
+      "project_name": "智能机舱",
+      "description": "陈端端的《ICM增强型深度强化学习：面向变电站巡检的长路径依赖与动态避障算法研究》，已投稿高电压技术增刊，处于外审阶段",
+      "category": "技术风险",
+      "severity": "medium",
+      "first_reported": "2026-W10",
+      "last_reported": "2026-W11",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W10",
+          "description": "陈端端的《ICM增强型深度强化学习：面向变电站巡检的长路径依赖与动态避障算法研究》，已投稿高电压技术增刊，处于外审阶段"
+        },
+        {
+          "week": "2026-W11",
+          "description": "陈端端的《ICM增强型深度强化学习：面向变电站巡检的长路径依赖与动态避障算法研究》，已拟录用，修改版本已提交"
+        }
+      ],
+      "trend": "persistent"
+    },
+    {
+      "project_id": "smart-cabin",
+      "project_name": "智能机舱",
+      "description": "张政屿《****基于SAM2视频分割的架空输电线路舞动目标跟踪与参数测量方法》撰写中",
+      "category": "管理风险",
+      "severity": "medium",
+      "first_reported": "2026-W10",
+      "last_reported": "2026-W11",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W10",
+          "description": "张政屿《****基于SAM2视频分割的架空输电线路舞动目标跟踪与参数测量方法》撰写中"
+        },
+        {
+          "week": "2026-W11",
+          "description": "张政屿《****基于SAM2视频分割的架空输电线路舞动目标跟踪与参数测量方法》,已完成一版内容，待投稿出去"
+        }
+      ],
+      "trend": "persistent"
+    },
+    {
+      "project_id": "smart-cabin",
+      "project_name": "智能机舱",
+      "description": "王宇恒《融合跨层注意力与动态稀疏剪枝的输电线路异物检测方法》撰写中教材编写：《信号与系统 MWORKS版》待王群反馈意见",
+      "category": "管理风险",
+      "severity": "medium",
+      "first_reported": "2026-W10",
+      "last_reported": "2026-W11",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W10",
+          "description": "王宇恒《融合跨层注意力与动态稀疏剪枝的输电线路异物检测方法》撰写中教材编写：《信号与系统 MWORKS版》待王群反馈意见"
+        },
+        {
+          "week": "2026-W11",
+          "description": "王宇恒《融合跨层注意力与动态稀疏剪枝的输电线路异物检测方法》，已完成一版内容，待投稿出去"
+        }
+      ],
+      "trend": "persistent"
+    },
+    {
+      "project_id": "150w-ic",
+      "project_name": "150W IC采购项目",
+      "description": "磁传感模块的定制和服务器的主板需要尽快推进",
+      "category": "管理风险",
+      "severity": "medium",
+      "first_reported": "2026-W11",
+      "last_reported": "2026-W11",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W11",
+          "description": "磁传感模块的定制和服务器的主板需要尽快推进"
+        }
+      ],
+      "trend": "unchanged"
+    },
+    {
+      "project_id": "smart-cabin",
+      "project_name": "智能机舱",
+      "description": "预计下周投出",
+      "category": "管理风险",
+      "severity": "medium",
+      "first_reported": "2026-W11",
+      "last_reported": "2026-W11",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W11",
+          "description": "预计下周投出"
+        }
+      ],
+      "trend": "unchanged"
+    },
+    {
+      "project_id": "smart-cabin",
+      "project_name": "智能机舱",
+      "description": "教材编写：《信号与系统 MWORKS版》待王群反馈意见",
+      "category": "管理风险",
+      "severity": "medium",
+      "first_reported": "2026-W11",
+      "last_reported": "2026-W11",
+      "status": "open",
+      "history": [
+        {
+          "week": "2026-W11",
+          "description": "教材编写：《信号与系统 MWORKS版》待王群反馈意见"
+        }
+      ],
+      "trend": "unchanged"
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-03-16T08:20:12.590264",
+    "total_reports": 23,
+    "total_projects": 8,
+    "total_people": 20,
+    "week_range": [
+      "2026-W10",
+      "2026-W11"
+    ]
+  }
+}
