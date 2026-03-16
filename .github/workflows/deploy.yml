@@ -3,7 +3,7 @@ name: Deploy Dashboard
 on:
   push:
     branches: [main]
-    paths: ['docs/**', 'data/processed/**']
+    paths: ['docs/**']
   workflow_dispatch:
     inputs:
       fetch_data:
@@ -17,6 +17,10 @@ permissions:
   contents: write
   pages: write
   id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   fetch-and-process:
@@ -39,11 +43,11 @@ jobs:
         env:
           DASHBOARD_PASSWORD: ${{ secrets.DASHBOARD_PASSWORD }}
         run: python scripts/encrypt_data.py
-      - name: Commit processed data
+      - name: Commit encrypted data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/processed/ docs/data/
+          git add docs/data/
           git diff --staged --quiet || git commit -m "Auto-update: fetch and process report data"
           git push
 
@@ -51,13 +55,19 @@ jobs:
     needs: [fetch-and-process]
     if: always() && (needs.fetch-and-process.result == 'success' || needs.fetch-and-process.result == 'skipped')
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
-          force_orphan: true
+          path: ./docs
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
